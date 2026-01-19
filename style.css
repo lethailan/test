@@ -1,41 +1,51 @@
-/* Thiết lập chung */
+/* ===== THIẾT LẬP CHUNG ===== */
 body {
-    line-height: 1.2;
+    font-family: "Times New Roman", serif;
+    line-height: 1.4;
     margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ====== CÁC "HÀM" KIỂU CHỮ ====== */
+/* ===== CÁC KIỂU CHỮ (FUNCTION STYLE) ===== */
 
 /* Tiêu đề chính */
 .f-title {
     text-align: center;
     color: #1f4aa8;
+    font-size: 26px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
-/* Mục lớn A, B, C, ... */
+/* Mục A, B, C, ... */
 .f-section {
     color: #c00000;
     font-size: 18px;
-    margin-top: 25px;
+    font-weight: bold;
+    margin-top: 22px;
 }
 
 /* Danh sách nội dung */
 .f-list {
-    margin-left: 40px;
-    color: black;
+    margin-left: 45px;
     font-size: 16px;
+    color: black;
+    list-style-type: circle;
 }
 
-/* Đoạn văn thường */
+/* Đoạn văn đơn */
 .f-text {
-    margin-left: 40px;
-    color: black;
+    margin-left: 45px;
     font-size: 16px;
+    color: black;
 }
 
-/* Khoảng cách giữa các dòng danh sách */
+/* Khoảng cách giữa các dòng */
 .f-list li {
     margin-bottom: 6px;
+}
+
+/* OL hiển thị A, B, C */
+.f-ol {
+    list-style-type: upper-alpha;
+    margin-left: 20px;
 }
