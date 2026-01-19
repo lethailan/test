@@ -1,1 +1,41 @@
+/* Thiết lập chung */
+body {
+    line-height: 1.2;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* ====== CÁC "HÀM" KIỂU CHỮ ====== */
+
+/* Tiêu đề chính */
+.f-title {
+    text-align: center;
+    color: #1f4aa8;
+    text-transform: uppercase;
+}
+
+/* Mục lớn A, B, C, ... */
+.f-section {
+    color: #c00000;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+/* Danh sách nội dung */
+.f-list {
+    margin-left: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+/* Đoạn văn thường */
+.f-text {
+    margin-left: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+/* Khoảng cách giữa các dòng danh sách */
+.f-list li {
+    margin-bottom: 6px;
+}
