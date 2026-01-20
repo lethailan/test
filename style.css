@@ -1,13 +1,9 @@
-/* ===== THIẾT LẬP CHUNG ===== */
+
 body {
     font-family: "Times New Roman", serif;
     line-height: 1.4;
     margin: 40px;
 }
-
-/* ===== CÁC KIỂU CHỮ (FUNCTION STYLE) ===== */
-
-/* Tiêu đề chính */
 .f-title {
     text-align: center;
     color: #1f4aa8;
@@ -15,36 +11,26 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
-
-/* Mục A, B, C, ... */
 .f-section {
     color: #c00000;
     font-size: 18px;
     font-weight: bold;
     margin-top: 22px;
 }
-
-/* Danh sách nội dung */
 .f-list {
     margin-left: 45px;
     font-size: 16px;
     color: black;
     list-style-type: circle;
 }
-
-/* Đoạn văn đơn */
 .f-text {
     margin-left: 45px;
     font-size: 16px;
     color: black;
 }
-
-/* Khoảng cách giữa các dòng */
 .f-list li {
     margin-bottom: 6px;
 }
-
-/* OL hiển thị A, B, C */
 .f-ol {
     list-style-type: upper-alpha;
     margin-left: 20px;
