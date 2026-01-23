@@ -6,13 +6,13 @@ body {
 }
 .f-title {
     text-align: center;
-    color: #1f4aa8;
+    color: dark blue;
     font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .f-section {
-    color: #c00000;
+    color: tomato;
     font-size: 18px;
     font-weight: bold;
     margin-top: 22px;
