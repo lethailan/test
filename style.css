@@ -1,8 +1,15 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Times New Roman", serif;
     line-height: 1.4;
-    margin: 40px;
 }
+
 .f-title {
     text-align: center;
     color:#1f4aa8;
@@ -10,63 +17,114 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .f-section {
     color: tomato;
     font-size: 18px;
     font-weight: bold;
     margin-top: 22px;
 }
+
 .f-list {
     margin-left: 45px;
     font-size: 16px;
     color: black;
     list-style-type: circle;
 }
+
 .f-text {
     margin-left: 45px;
     font-size: 16px;
     color: black;
 }
+
 .f-list li {
     margin-bottom: 6px;
 }
+
 .f-ol {
     list-style-type: upper-alpha;
     margin-left: 20px;
 }
 
-/* ========================= */
-/* LAYOUT CHO TRANG CHÍNH */
-/* ========================= */
+
+/* ============================= */
+/* LAYOUT CHO index.html */
+/* ============================= */
 
 .main-layout {
-    margin: 0;
-    padding: 0;
+    background-color: #f2f2f2;
 }
 
-/* HEADER */
-.main-layout .ml-header {
+/* ===== HEADER ===== */
+.ml-header {
     background: linear-gradient(to right, #0c4da2, #1f78d1);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
-.main-layout .ml-header h1 {
-    font-size: 28px;
+.ml-header h1 {
+    font-size: 26px;
 }
 
-.main-layout .ml-header p {
-    font-size: 18px;
+.ml-header p {
+    font-size: 17px;
     font-style: italic;
 }
 
-/* MENU */
-.main-layout .ml-navbar {
+/* ===== MENU ===== */
+.ml-navbar {
     background-color: #2f3e55;
     text-align: center;
 }
 
+.ml-navbar ul {
+    list-style: none;
+}
+
+.ml-navbar ul li {
+    display: inline-block;
+}
+
+.ml-navbar ul li a {
+    display: inline-block;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Hover sáng lên */
+.ml-navbar ul li a:hover {
+    background-color: #4f7bd9;
+}
+
+/* ===== KHUNG NỘI DUNG ===== */
+.ml-content {
+    width: 90%;
+    margin: 25px auto;
+    background: white;
+    min-height: 550px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* iframe */
+.ml-content iframe {
+    width: 100%;
+    height: 550px;
+    border: none;
+}
+
+/* ===== FOOTER ===== */
+.ml-footer {
+    background-color: #2f3e55;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
 .main-layout .ml-navbar ul {
     list-style: none;
 }
