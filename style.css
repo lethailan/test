@@ -131,3 +131,39 @@ font-style: italic;
 font-style: normal; 
   font-family: Arial;
 }
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.4;
+    margin: 40px;
+}
+.f-title {
+    text-align: center;
+    color:#1f4aa8;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.f-section {
+    color: tomato;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 22px;
+}
+.f-list {
+    margin-left: 45px;
+    font-size: 16px;
+    color: black;
+    list-style-type: circle;
+}
+.f-text {
+    margin-left: 45px;
+    font-size: 16px;
+    color: black;
+}
+.f-list li {
+    margin-bottom: 6px;
+}
+.f-ol {
+    list-style-type: upper-alpha;
+    margin-left: 20px;
+}
