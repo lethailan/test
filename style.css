@@ -1,37 +1,80 @@
 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Times New Roman", serif;
-    line-height: 1.4;
-    margin: 40px;
+    background-color: #f2f2f2;
 }
-.f-title {
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #0c4da2, #1f78d1);
+    color: white;
     text-align: center;
-    color:#1f4aa8;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 20px;
 }
-.f-section {
-    color: tomato;
+
+.header h1 {
+    font-size: 28px;
+}
+
+.header p {
     font-size: 18px;
-    font-weight: bold;
-    margin-top: 22px;
+    font-style: italic;
 }
-.f-list {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-    list-style-type: circle;
+
+/* MENU */
+.navbar {
+    background-color: #2f3e55;
+    text-align: center;
 }
-.f-text {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
+
+.navbar ul {
+    list-style: none;
 }
-.f-list li {
-    margin-bottom: 6px;
+
+.navbar ul li {
+    display: inline-block;
 }
-.f-ol {
-    list-style-type: upper-alpha;
-    margin-left: 20px;
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Hover sáng lên */
+.navbar ul li a:hover {
+    background-color: #4f7bd9;
+}
+
+/* CONTENT (iframe) */
+.content {
+    width: 85%;
+    margin: 25px auto;
+    background: white;
+    min-height: 500px;
+    padding: 10px;
+}
+
+/* iframe full khung */
+.content iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #2f3e55;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
 }
