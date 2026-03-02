@@ -1,40 +1,76 @@
+/* ========================= */
+/* LAYOUT CHO TRANG CHÍNH */
+/* ========================= */
 
-/* Reset */
-* {
+.main-layout {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Times New Roman", serif;
-    background-color: #f2f2f2;
 }
 
 /* HEADER */
-.header {
+.main-layout .ml-header {
     background: linear-gradient(to right, #0c4da2, #1f78d1);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-.header h1 {
+.main-layout .ml-header h1 {
     font-size: 28px;
 }
 
-.header p {
+.main-layout .ml-header p {
     font-size: 18px;
     font-style: italic;
 }
 
 /* MENU */
-.navbar {
+.main-layout .ml-navbar {
     background-color: #2f3e55;
     text-align: center;
 }
 
-.navbar ul {
+.main-layout .ml-navbar ul {
+    list-style: none;
+}
+
+.main-layout .ml-navbar ul li {
+    display: inline-block;
+}
+
+.main-layout .ml-navbar ul li a {
+    display: inline-block;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Hover sáng */
+.main-layout .ml-navbar ul li a:hover {
+    background-color: #4f7bd9;
+}
+
+/* CONTENT */
+.main-layout .ml-content {
+    width: 85%;
+    margin: 20px auto;
+    background: white;
+    min-height: 500px;
+}
+
+.main-layout .ml-content iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* FOOTER */
+.main-layout .ml-footer {
+    background-color: #2f3e55;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}.navbar ul {
     list-style: none;
 }
 
