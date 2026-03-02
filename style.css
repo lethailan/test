@@ -1,211 +1,74 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container{
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+}
+.header{
+     flex: 15%;
+    background-color: pink;
+}
+.menu{
+     flex: 5%;
+    background-color: darkblue;
+     display: flex;
+     align-items: center;
+}
+.menu a{
+     padding: 15px 20px;
+     color: pink;
+}
+.menu hover{
+     background-color: lightblue;
+     color: black;
 }
 
-body {
-    font-family: "Times New Roman", serif;
-    line-height: 1.4;
+.content{
+     flex: 70%;
+     background-color: white;
+}
+.content iframe{
+     flex: 1;
+     width: 100%;
+     height: 100%;
+     border: 0;
+}
+.footer{
+     flex: 10%;
+     background-color: white;
 }
 
-.f-title {
-    text-align: center;
-    color:#1f4aa8;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
+h1 {
+color:red;
 }
-
-.f-section {
-    color: tomato;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 22px;
+.f1{
+  color: tomato;
+  margin-top: 18pt;
+  margin-botton: 12pt;
+  font-size: 20px;
+  font-weight: bold; 
+  font-family: Arial;
 }
-
-.f-list {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-    list-style-type: circle;
+.f2{
+  color: purple;
+  margin-top: 10pt;
+  margin-botton: 6pt;
+  font-size: 15px;
+font-style: italic; 
+  font-family: Arial;
 }
-
-.f-text {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
+.f3{
+  color: pink;
+  margin-top: 18pt;
+  margin-botton: 12pt;
+  font-size: 20px;
+  font-weight: bold; 
+  font-family: Arial;
 }
-
-.f-list li {
-    margin-bottom: 6px;
-}
-
-.f-ol {
-    list-style-type: upper-alpha;
-    margin-left: 20px;
-}
-
-
-/* ============================= */
-/* LAYOUT CHO index.html */
-/* ============================= */
-
-.main-layout {
-    background-color: #f2f2f2;
-}
-
-/* ===== HEADER ===== */
-.ml-header {
-    background: linear-gradient(to right, #0c4da2, #1f78d1);
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-.ml-header h1 {
-    font-size: 26px;
-}
-
-.ml-header p {
-    font-size: 17px;
-    font-style: italic;
-}
-
-/* ===== MENU ===== */
-.ml-navbar {
-    background-color: #2f3e55;
-    text-align: center;
-}
-
-.ml-navbar ul {
-    list-style: none;
-}
-
-.ml-navbar ul li {
-    display: inline-block;
-}
-
-.ml-navbar ul li a {
-    display: inline-block;
-    padding: 14px 22px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-    font-size: 15px;
-}
-
-/* Hover sáng lên */
-.ml-navbar ul li a:hover {
-    background-color: #4f7bd9;
-}
-
-/* ===== KHUNG NỘI DUNG ===== */
-.ml-content {
-    width: 90%;
-    margin: 25px auto;
-    background: white;
-    min-height: 550px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-/* iframe */
-.ml-content iframe {
-    width: 100%;
-    height: 550px;
-    border: none;
-}
-
-/* ===== FOOTER ===== */
-.ml-footer {
-    background-color: #2f3e55;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    font-size: 14px;
-}
-.main-layout .ml-navbar ul {
-    list-style: none;
-}
-
-.main-layout .ml-navbar ul li {
-    display: inline-block;
-}
-
-.main-layout .ml-navbar ul li a {
-    display: inline-block;
-    padding: 14px 22px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-/* Hover sáng */
-.main-layout .ml-navbar ul li a:hover {
-    background-color: #4f7bd9;
-}
-
-/* CONTENT */
-.main-layout .ml-content {
-    width: 85%;
-    margin: 20px auto;
-    background: white;
-    min-height: 500px;
-}
-
-.main-layout .ml-content iframe {
-    width: 100%;
-    height: 500px;
-}
-
-/* FOOTER */
-.main-layout .ml-footer {
-    background-color: #2f3e55;
-    color: white;
-    text-align: center;
-    padding: 12px;
-}.navbar ul {
-    list-style: none;
-}
-
-.navbar ul li {
-    display: inline-block;
-}
-
-.navbar ul li a {
-    display: inline-block;
-    padding: 14px 22px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-/* Hover sáng lên */
-.navbar ul li a:hover {
-    background-color: #4f7bd9;
-}
-
-/* CONTENT (iframe) */
-.content {
-    width: 85%;
-    margin: 25px auto;
-    background: white;
-    min-height: 500px;
-    padding: 10px;
-}
-
-/* iframe full khung */
-.content iframe {
-    width: 100%;
-    height: 500px;
-}
-
-/* FOOTER */
-.footer {
-    background-color: #2f3e55;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    margin-top: 20px;
+.f4{
+  color: black;
+  margin-top: 10pt;
+  margin-botton: 6pt;
+  font-size: 15px;
+font-style: normal; 
+  font-family: Arial;
 }
