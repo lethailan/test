@@ -1,4 +1,4 @@
-/* Tổng thể */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +10,15 @@
     flex-direction: column;
     height: 100vh;
 }
-
-/* Header - Chứa banner ảnh */
 .header {
     flex: 20%; 
     background: url('banner.jpg') no-repeat center center; /* Thay tên file ảnh banner của bạn */
     background-size: cover;
 }
 
-/* Menu điều hướng */
 .menu {
     flex: 5%;
-    background-color: #253746; /* Màu xanh đen như ảnh */
+    background-color: #253746; 
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -38,10 +35,7 @@
 
 .menu a:hover {
     background-color: #3e5b74;
-    color: #ffd700; /* Màu vàng nhẹ khi rê chuột */
-}
-
-/* Phần nội dung hiển thị iframe */
+    color: #ffd700; }
 .content {
     flex: 70%;
     background-color: #ffffff;
@@ -66,7 +60,6 @@
     border-top: 1px solid #444;
 }
 
-/* ====== ĐỊNH DẠNG CHỮ TRONG NỘI DUNG (Dùng cho các file trong iframe) ====== */
 
 .f-title {
     text-align: center;
