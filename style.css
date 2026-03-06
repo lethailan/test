@@ -12,7 +12,7 @@
 }
 .header {
     flex: 20%; 
-    background: url('images/banner.jpg');
+    background: url("images/banner.jpg");
     aspect-ratio: 6 / 1;
 }
 
