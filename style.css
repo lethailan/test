@@ -10,6 +10,12 @@
     flex-direction: column;
     height: 100vh;
 }
+.header {
+    flex: 20%; 
+    background: url('images/banner.jpg') no-repeat center center; /* Thay tên file ảnh banner của bạn */
+    background-size: cover;
+    aspect-ratio: 6 / 1;
+}
 
 .menu {
     flex: 5%;
@@ -42,6 +48,83 @@
     border: 0;
 }
 
+/* Footer */
+.footer {
+    flex: 5%;
+    background-color: #253746;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    border-top: 1px solid #444;
+}
+
+
+.f-title {
+    text-align: center;
+    color: #d32f2f; /* Màu đỏ tiêu đề */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.f-section {
+    color: #e64a19; /* Màu cam đỏ cho các mục mục con */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.f-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+  font-family: Arial;
+}
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.4;
+    margin: 40px;
+}
+.f-title {
+    text-align: center;
+    color:#1f4aa8;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.f-section {
+    color: tomato;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 22px;
+}
+.f-list {
+    margin-left: 45px;
+    font-size: 16px;
+    color: black;
+    list-style-type: circle;
+}
+.f-text {
+    margin-left: 45px;
+    font-size: 16px;
+    color: black;
+}
+.f-list li {
+    margin-bottom: 6px;
+}
+.f-ol {
+    list-style-type: upper-alpha;
+    margin-left: 20px;
+}
 /* Footer */
 .footer {
     flex: 5%;
