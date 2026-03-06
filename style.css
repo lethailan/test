@@ -12,8 +12,7 @@
 }
 .header {
     flex: 20%; 
-    background: url('images/banner.jpg') no-repeat center center; /* Thay tên file ảnh banner của bạn */
-    background-size: cover;
+    background: url('images/banner.jpg');
     aspect-ratio: 6 / 1;
 }
 
