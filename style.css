@@ -11,9 +11,9 @@
     height: 100vh;
 }
 .header {
-    flex: 20%; 
-    background: url("images/banner.jpg") center/100%;
+    background: url("images/banner.jpg") no-repeat center / 100%;
     aspect-ratio: 6 / 1;
+}
 }
 
 .menu {
