@@ -1,22 +1,31 @@
-
+/* 1. Reset & Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.4;
+    /* Đã bỏ margin 40px để tránh lỗi tràn khung h-100vh */
+}
+
+/* 2. Layout */
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+
 .header {
-    background: url("images/banner.jpg");
+    background: url("images/banner.jpg") no-repeat center/cover;
     aspect-ratio: 6 / 1;
+    flex-shrink: 0; /* Giữ nguyên tỉ lệ banner */
 }
 
 .menu {
-    flex: 5%;
+    flex: 0 0 50px; /* Cố định chiều cao menu thay vì dùng % */
     background-color: #253746; 
     display: flex;
     align-items: center;
@@ -34,10 +43,13 @@
 
 .menu a:hover {
     background-color: #3e5b74;
-    color: #ffd700; }
+    color: #ffd700;
+}
+
 .content {
-    flex: 70%;
+    flex: 1; /* Tự động chiếm hết không gian còn lại */
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 .content iframe {
@@ -46,9 +58,8 @@
     border: 0;
 }
 
-/* Footer */
 .footer {
-    flex: 5%;
+    flex: 0 0 40px;
     background-color: #253746;
     color: #ffffff;
     display: flex;
@@ -59,143 +70,42 @@
     border-top: 1px solid #444;
 }
 
-
+/* 3. Typography (Đã gộp và xóa trùng lặp) */
 .f-title {
     text-align: center;
-    color: #d32f2f; /* Màu đỏ tiêu đề */
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px 0;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.f-section {
-    color: #e64a19; /* Màu cam đỏ cho các mục mục con */
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-    font-family: Arial, sans-serif;
-}
-
-.f-text {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
-}
-  font-family: Arial;
-}
-body {
-    font-family: "Times New Roman", serif;
-    line-height: 1.4;
-    margin: 40px;
-}
-.f-title {
-    text-align: center;
-    color:#1f4aa8;
+    color: #1f4aa8;
     font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 20px 0;
 }
+
 .f-section {
     color: tomato;
     font-size: 18px;
     font-weight: bold;
     margin-top: 22px;
+    font-family: Arial, sans-serif;
 }
+
+.f-text {
+    margin-left: 45px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
 .f-list {
     margin-left: 45px;
     font-size: 16px;
     color: black;
     list-style-type: circle;
 }
-.f-text {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-}
+
 .f-list li {
     margin-bottom: 6px;
 }
-.f-ol {
-    list-style-type: upper-alpha;
-    margin-left: 20px;
-}
-/* Footer */
-.footer {
-    flex: 5%;
-    background-color: #253746;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    border-top: 1px solid #444;
-}
 
-
-.f-title {
-    text-align: center;
-    color: #d32f2f; /* Màu đỏ tiêu đề */
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px 0;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.f-section {
-    color: #e64a19; /* Màu cam đỏ cho các mục mục con */
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-    font-family: Arial, sans-serif;
-}
-
-.f-text {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
-}
-  font-family: Arial;
-}
-body {
-    font-family: "Times New Roman", serif;
-    line-height: 1.4;
-    margin: 40px;
-}
-.f-title {
-    text-align: center;
-    color:#1f4aa8;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.f-section {
-    color: tomato;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 22px;
-}
-.f-list {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-    list-style-type: circle;
-}
-.f-text {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-}
-.f-list li {
-    margin-bottom: 6px;
-}
 .f-ol {
     list-style-type: upper-alpha;
     margin-left: 20px;
