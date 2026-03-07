@@ -16,7 +16,15 @@ body {
 }
 
 .header {
-    background: url("images/banner.jpg") no-repeat center / 100%; 
+    background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #add8e6; 
+    width: 100%;
+    height: auto;
+    min-height: 180px; 
+    aspect-ratio: 1920 / 450; 
 }
 
 .menu {
