@@ -110,30 +110,33 @@ body {
     background-color: #f4f7f9; 
 }
 
+/* Khung chứa chính */
 .intro-container {
     display: flex;
-    max-width: 900px;
-    margin: 0 auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    gap: 40px;
+    flex-direction: row-reverse; /* Đảo ngược vị trí: Nội dung trước, Ảnh sau (bên phải) */
     align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+    background: #fff;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 15px;
 }
 
+/* Thu nhỏ và căn chỉnh ảnh */
 .intro-image {
-    flex: 0 0 220px;
+    flex: 0 0 180px; /* Thu nhỏ độ rộng khung chứa ảnh xuống còn 180px */
 }
 
 .intro-image img {
-    width: 100%;
+    width: 100%; /* Ảnh sẽ co theo khung 180px ở trên */
     height: auto;
-    border-radius: 12px;
-    border: 4px solid #1f4aa8; 
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 3px solid #1f4aa8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Phần nội dung chữ */
 .intro-content {
     flex: 1;
 }
