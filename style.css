@@ -16,14 +16,11 @@ body {
 }
 
 .header {
-    background-image: url("images/banner.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background: url("images/banner.jpg") no-repeat center / 100% 100%; 
+    /* Cách 1: Sử dụng aspect-ratio để tự tạo khung hình (Khuyên dùng) */
+    aspect-ratio: 1920 / 450; /* Thay số này bằng tỷ lệ Rộng/Cao của ảnh gốc */
     width: 100%;
-    height: auto;
-    min-height: 180px; 
-    aspect-ratio: 1920 / 450; 
+    flex-shrink: 0; /* Đảm bảo banner không bị co lại bởi flexbox */
 }
 
 .menu {
