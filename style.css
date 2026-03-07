@@ -114,22 +114,21 @@ body {
     background-color: #f4f7f9; 
 }
 
-/* Khung chứa chính */
 .intro-container {
     display: flex;
-    flex-direction: row-reverse; /* Đảo ngược vị trí: Nội dung trước, Ảnh sau (bên phải) */
+    flex-direction: row; /* Chuyển về row để dễ kiểm soát */
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
-    padding: 30px;
-    background: #fff;
-    max-width: 900px;
-    margin: 20px auto;
-    border-radius: 15px;
+    /* ... các code khác giữ nguyên ... */
 }
 
-/* Thu nhỏ và căn chỉnh ảnh */
+.intro-content {
+    order: 1; /* Chữ nằm trước */
+}
+
 .intro-image {
-    flex: 0 0 180px; /* Thu nhỏ độ rộng khung chứa ảnh xuống còn 180px */
+    order: 2; /* Ảnh nằm sau (bên phải) */
+    flex: 0 0 180px;
 }
 
 .intro-image img {
