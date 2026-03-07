@@ -1,162 +1,55 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 1. Reset & Cơ bản */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: "Times New Roman", Times, serif; 
+    line-height: 1.6; padding: 30px 50px; 
 }
 
-body {
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.6;
-    padding: 30px 50px;
-}
+/* 2. Cấu trúc Layout (Gộp Header, Menu, Footer) */
+.container { display: flex; flex-direction: column; height: 100vh; }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.header {
+.header { 
     background: url("images/banner.jpg") no-repeat center / 100% 100%; 
-    aspect-ratio: 1500 / 200;
-    width: 100%;
-    flex-shrink: 0;
+    aspect-ratio: 1500 / 200; width: 100%; flex-shrink: 0; 
 }
 
-.menu {
-    flex: 0 0 50px; 
-    background-color: #253746; 
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+.menu, .footer { background-color: #253746; color: #ffffff; font-family: Arial, sans-serif; }
+
+.menu { flex: 0 0 50px; display: flex; align-items: center; padding-left: 20px; }
+.menu a { padding: 10px 20px; color: #ffffff; text-decoration: none; font-size: 14px; transition: 0.3s; }
+.menu a:hover { background-color: #3e5b74; color: #ffd700; }
+
+.content { flex: 1; background-color: #ffffff; overflow: hidden; }
+.content iframe { width: 100%; height: 100%; border: 0; }
+
+.footer { flex: 0 0 40px; display: flex; justify-content: center; align-items: center; font-size: 13px; border-top: 1px solid #444; }
+
+/* 3. Nội dung Chương trình (f-classes) */
+.f-title { color: #1f4aa8 !important; font-size: 26px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px !important; text-align: left !important; }
+
+.f-section { 
+    color: tomato; font-size: 18px; font-weight: bold; margin-top: 22px; 
+    font-family: Arial, sans-serif; border-left: 4px solid tomato; 
+    padding-left: 10px; margin-bottom: 10px !important; 
 }
 
-.menu a {
-    padding: 10px 20px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    transition: 0.3s;
-}
+.f-text, .f-list { margin-left: 15px !important; font-size: 16px; margin-bottom: 8px !important; }
+.f-text { color: #333; line-height: 1.6; }
 
-.menu a:hover {
-    background-color: #3e5b74;
-    color: #ffd700;
-}
+.f-list { color: black; list-style-type: circle; margin-left: 45px; }
+.f-list li { margin-bottom: 6px; }
 
-.content {
-    flex: 1; 
-    background-color: #ffffff;
-    overflow: hidden;
-}
+.f-ol { list-style-type: upper-alpha; margin-left: 20px; }
 
-.content iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
+/* 4. Phần Giới thiệu cá nhân (Intro) */
+.intro-body { padding: 20px; background-color: #f4f7f9; }
 
-.footer {
-    flex: 0 0 40px;
-    background-color: #253746;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    border-top: 1px solid #444;
-}
+.intro-container { display: flex; justify-content: space-between; align-items: flex-start; }
+.intro-content { flex: 1; order: 1; }
 
-.f-title {
-    text-align: center;
-    color: #1f4aa8;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px 0;
-}
-
-.f-section {
-    color: tomato;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 22px;
-    font-family: Arial, sans-serif;
-}
-
-.f-text {
-    margin-left: 45px;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-}
-
-.f-list {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-    list-style-type: circle;
-}
-
-.f-list li {
-    margin-bottom: 6px;
-}
-
-.f-ol {
-    list-style-type: upper-alpha;
-    margin-left: 20px;
-}
-.intro-body {
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f7f9; 
-}
-
-.intro-container {
-    display: flex;
-    flex-direction: row; /* Chuyển về row để dễ kiểm soát */
-    justify-content: space-between;
-    align-items: flex-start;
-    /* ... các code khác giữ nguyên ... */
-}
-
-.intro-content {
-    order: 1; /* Chữ nằm trước */
-}
-
-.intro-image {
-    order: 2; /* Ảnh nằm sau (bên phải) */
-    flex: 0 0 180px;
-}
-
-.intro-image img {
-    width: 100%; /* Ảnh sẽ co theo khung 180px ở trên */
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #1f4aa8;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Phần nội dung chữ */
-.intro-content {
-    flex: 1;
-}
-
-.f-title {
-    text-align: left !important;
-    margin-bottom: 20px !important;
-    color: #1f4aa8 !important;
-}
-
-.f-section {
-    border-left: 4px solid tomato; 
-    padding-left: 10px;
-    margin-bottom: 10px !important;
-}
-
-.f-text {
-    margin-left: 15px !important;
-    margin-bottom: 8px !important;
+.intro-image { flex: 0 0 180px; order: 2; }
+.intro-image img { 
+    width: 100%; height: auto; border-radius: 10px; 
+    border: 3px solid #1f4aa8; box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
 }
