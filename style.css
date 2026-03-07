@@ -31,7 +31,7 @@ body {
 .f-section { 
     color: tomato; font-size: 18px; font-weight: bold; margin-top: 22px; 
     font-family: Arial, sans-serif; border-left: 4px solid tomato; 
-    padding-left: 10px; margin-bottom: 10px !important; 
+    padding-left: 10px; margin-bottom: 10px ; 
 }
 
 .f-text, .f-list { margin-left: 15px ; font-size: 16px; margin-bottom: 8px ; }
