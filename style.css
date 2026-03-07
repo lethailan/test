@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background: url("images/banner.jpg") no-repeat top center / cover; 
+    background: url("images/banner.jpg") no-repeat center / 100%; 
 }
 
 .menu {
