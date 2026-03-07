@@ -6,7 +6,8 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
-    line-height: 1.4;
+    line-height: 1.6;
+    padding: 30px 50px;
 }
 
 .container {
