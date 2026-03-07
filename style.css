@@ -19,9 +19,8 @@ body {
 }
 
 .header {
-    background: url("images/banner.jpg") no-repeat center/cover;
-    aspect-ratio: 6 / 1;
-    flex-shrink: 0; /* Giữ nguyên tỉ lệ banner */
+    background: url("images/banner.jpg") no-repeat top center / cover; /* Cách viết tắt gọn gàng */
+    aspect-ratio: 6 / 1; /* Giữ tỷ lệ này nếu thiết kế yêu cầu */
 }
 
 .menu {
