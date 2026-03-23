@@ -106,3 +106,18 @@ body {
 .btn-submit:hover {
     background-color: #253746;
 }
+/* 6. Style bổ sung cho Nhiệm vụ 2 */
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-item {
+    display: block; /* Để mỗi lựa chọn nằm trên một dòng */
+    margin-bottom: 5px;
+    font-weight: normal; /* Checkbox không cần in đậm như tiêu đề label */
+    cursor: pointer;
+}
+
+.checkbox-item input {
+    margin-right: 10px;
+}
