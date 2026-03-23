@@ -2,8 +2,8 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thực hành tạo biểu mẫu</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Bài 7 - Nhiệm vụ 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="intro-body">
 
@@ -24,16 +24,42 @@
                         <input type="text" id="txtEmail" name="txtEmail">
                     </div>
 
-                    <h2 class="f-section">2. Đóng góp ý kiến</h2>
+                    <h2 class="f-section">2. Thể loại cần bổ sung thêm sách</h2>
+                    <div class="checkbox-group f-text">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="chkTruyenNgan"> Truyện ngắn
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="chkKiNang"> Kĩ năng sống
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="chkCNTT"> Công nghệ thông tin
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="chkTruyenTranh"> Truyện tranh
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="chkLichSu"> Lịch sử
+                        </label>
+                    </div>
+
+                    <h2 class="f-section">3. Đóng góp ý kiến</h2>
                     <div class="form-group f-text">
                         <label for="txtComment">Ý kiến đóng góp:</label>
                         <textarea id="txtComment" name="txtComment" rows="6"></textarea>
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn-submit">Gửi ý kiến</button>
+                        <input type="submit" name="cmd" value="Góp ý" class="btn-submit">
                     </div>
 
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
                 </form>
             </div>
         </div>
