@@ -30,9 +30,6 @@
         let pp = new URLSearchParams(window.location.search);
         let ten = pp.get("txtTen");
         let yk = pp.get("txtComment");
-
-        // Hiển thị kết quả vào thẻ p có id="kq"
-        // Thêm dấu ? : để xử lý trường hợp người dùng để trống ô nhập
         document.getElementById("kq").innerHTML = 
             "Cảm ơn bạn <b>" + (ten ? ten : "khách") + "</b> đã đóng góp ý kiến.<br><br>" + 
             "Chúng tôi xin ghi nhận ý kiến của bạn như sau: <br><i>" + (yk ? yk : "(Trống)") + "</i>";
