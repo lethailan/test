@@ -6,19 +6,23 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="intro-body">
-
+<body>
+<p id="kq"> </p>
+<script>
+let pp = new URLSearchParams(window.location.search);
+let ten = pp.get("txtTen");
+let yk = pp.get("txtComment");
     <div class="intro-container">
         <div class="intro-content">
-            <h1 class="f-title">Cảm ơn bạn đã góp ý kiến</h1>
-            
+            <h1 class="f-title">Cảm ơn bạn "ten" đã góp ý kiến</h1>
             <div class="form-container">
-                <p class="f-text">Chúng tôi xin ghi nhận ý kiến của bạn và sẽ cải tiến, nâng cao chất lượng phục vụ hơn nữa trong thời gian sắp tới.</p>
+                <p class="f-text">Chúng tôi xin ghi nhận ý kiến của bạn như sau "yk" </p>
                 <div style="margin-top: 20px;">
                     <a href="GopY.html" class="btn-submit" style="text-decoration: none; display: inline-block;">Quay lại</a>
                 </div>
             </div>
         </div>
     </div>
-
+        </script>
 </body>
 </html>
